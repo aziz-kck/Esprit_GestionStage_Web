@@ -1,0 +1,21 @@
+
+
+<br>
+<div class="container">
+  <div class="row">
+    <div class="col-md-10 offset-md-1">
+      <h2>Create Role</h2>
+      <form (ngSubmit)="onSubmit()">
+
+        <div class="form-group">
+          <label>Role Name:</label>
+          <input type="text" class="form-control" id="text" [(ngModel)]="role.name" name="text" placeholder="Enter text">
+        </div>
+        <br>
+        <button type="submit" class="btn btn-primary" >Create Role</button>
+        <button (click)="viewRoles()" type="button" class="btn btn-secondary float-right">view</button>
+      </form>
+    </div>
+  </div>
+</div>
+

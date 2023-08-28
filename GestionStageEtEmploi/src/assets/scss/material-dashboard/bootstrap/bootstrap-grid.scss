@@ -1,0 +1,64 @@
+@import "src/assets/scss/material-dashboard/bootstrap/mixins/banner";
+@include bsBanner(Grid);
+
+$include-column-box-sizing: true !default;
+
+@import "functions";
+@import "variables";
+@import "maps";
+
+@import "src/assets/scss/material-dashboard/bootstrap/mixins/lists";
+@import "src/assets/scss/material-dashboard/bootstrap/mixins/breakpoints";
+@import "src/assets/scss/material-dashboard/bootstrap/mixins/container";
+@import "src/assets/scss/material-dashboard/bootstrap/mixins/grid";
+@import "src/assets/scss/material-dashboard/bootstrap/mixins/utilities";
+
+@import "src/assets/scss/material-dashboard/bootstrap/vendor/rfs";
+
+@import "root";
+
+@import "containers";
+@import "grid";
+
+@import "utilities";
+// Only use the utilities we need
+// stylelint-disable-next-line scss/dollar-variable-default
+$utilities: map-get-multiple(
+  $utilities,
+  (
+    "display",
+    "order",
+    "flex",
+    "flex-direction",
+    "flex-grow",
+    "flex-shrink",
+    "flex-wrap",
+    "justify-content",
+    "align-items",
+    "align-content",
+    "align-self",
+    "margin",
+    "margin-x",
+    "margin-y",
+    "margin-top",
+    "margin-end",
+    "margin-bottom",
+    "margin-start",
+    "negative-margin",
+    "negative-margin-x",
+    "negative-margin-y",
+    "negative-margin-top",
+    "negative-margin-end",
+    "negative-margin-bottom",
+    "negative-margin-start",
+    "padding",
+    "padding-x",
+    "padding-y",
+    "padding-top",
+    "padding-end",
+    "padding-bottom",
+    "padding-start",
+  )
+);
+
+@import "src/assets/scss/material-dashboard/bootstrap/utilities/api";
