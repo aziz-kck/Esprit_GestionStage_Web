@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.example.pidev.PidevApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 20.548 s - in com.example.pidev.PidevApplicationTests
